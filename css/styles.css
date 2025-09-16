@@ -1,0 +1,277 @@
+:root {
+  --primary: #1f1a3d;
+  --secondary: #eeefff;
+  --accent: #8c52ff;
+  --accent2: #51ffe7;
+  --card-bg: rgba(255,255,255,0.18);
+  --card-blur: 28px;
+  --shadow: 0 0 40px rgba(86,40,239,0.25);
+  --radius: 22px;
+  --font-head: 'Montserrat', 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0d0030 5%, #3a1756 95%);
+  margin: 0;
+  color: var(--secondary);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--card-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 70px;
+  font-family: var(--font-head);
+  box-shadow: var(--shadow);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.nav-links {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a,
+.resume-btn {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: color 0.3s;
+  border: none;
+  background: none;
+  padding: 6px 16px;
+}
+
+.resume-btn {
+  background: var(--accent);
+  border-radius: 9px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-links a:hover,
+.resume-btn:hover {
+  background: rgba(140,82,255,0.18);
+  color: #ae82fa;
+}
+
+/* Header */
+.header {
+  padding: 80px 40px 50px 40px;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.profile-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 14px 60px rgba(140,82,255,0.36);
+  border: 5px solid var(--accent2);
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.name-gradient {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0 0 18px 0;
+}
+.header-sub {
+  font-size: 1.23rem;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+.contact-card {
+  background: rgba(92,226,230,0.19);
+  padding: 10px 26px;
+  border-radius: 16px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mail-link {
+  color: #25a7ea;
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  max-width: 940px;
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+/* Card */
+.card {
+  border-radius: var(--radius);
+  backdrop-filter: blur(var(--card-blur));
+  padding: 40px 48px;
+  margin-bottom: 60px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+.card h2 {
+  margin-bottom: 28px;
+  font-size: 2.2rem;
+  color: var(--accent2);
+  font-weight: 800;
+}
+
+/* Skills */
+.skills-container div {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+.skill-cat {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.project {
+  background: rgba(255,255,255,0.19);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+  flex: 1 1 260px;
+  box-shadow: 0 12px 32px rgba(140,82,255,0.22);
+  transition: transform 0.26s ease, box-shadow 0.26s ease;
+}
+.project h3 {
+  margin-bottom: 10px;
+  color: var(--accent2);
+  font-weight: 800;
+  font-size: 1.22rem;
+}
+.project p {
+  font-size: 1.09rem;
+  line-height: 1.55;
+}
+.project:hover {
+  transform: scale(1.07) translateY(-8px);
+  box-shadow: 0 18px 48px rgba(140,82,255,0.31);
+}
+
+/* 
+/* Education section cards */
+.education-timeline .timeline-item {
+  margin-bottom: 40px;
+}
+
+.education-timeline .timeline-content {
+  background: var(--card-bg);
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(var(--card-blur));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.education-timeline .timeline-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(140,82,255,0.3);
+}
+
+/* School name formatting */
+.education-timeline .timeline-content h3 {
+  color: var(--accent2);
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+}
+
+/* Degree/year/gpa styles */
+.education-timeline .degree,
+.education-timeline .year,
+.education-timeline .gpa {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+
+
+
+
+/* Contact Section */
+.contact-me-section {
+  color: #ffffff; /* all text inside will be white */
+  font-size: 1.05rem;
+}
+
+.contact-me-section h2 {
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-item svg {
+  flex-shrink: 0;
+}
+
+/* Contact text and links */
+.contact-t,
+.contact-link {
+  color: #ffffff;  /* force white text */
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.contact-link:hover {
+  color: #ff4081;  /* hover accent color (you can change) */
+}
+
+
+
+
+
+/* Header Section */
+.header {
+  color: #ffffff; /* default white text */
+}
+
+.header-info h1,
+.header-info p,
+.header-info span,
+.header-info a {
+  color: #ffffff !important; /* force white for all text */
+  text-decoration: none; /* remove underline for links */
+}
+
+.header-info a:hover {
+  color: #ffccff; /* soft hover effect */
+}
