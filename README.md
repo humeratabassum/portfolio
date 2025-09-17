@@ -4,7 +4,7 @@ This repository contains the source code for my **personal portfolio website**, 
 
 🔗 **Live Website**: [View Portfolio](https://portfolio-git-main-humeras-projects-0f2b2ff8.vercel.app/)  
 
----
+
 
 ## 📑 Overview  
 The portfolio highlights my:  
@@ -13,24 +13,25 @@ The portfolio highlights my:
 - Roles and responsibilities in organizations  
 - Contact information and social profiles  
 
----
+
 
 ## 🛠️ Tech Stack  
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla JS)  
 - **Styling**: Custom CSS  
----
 
 ## 📂 Project Structure  
 
-├── assets/ # Profile image, resume, and other static assets
-│ ├── profile.jpg
-│ └── resume.pdf
-├── css/ # Stylesheets
-│ └── styles.css
-├── js/ # JavaScript functionality
-│ └── main.js
-├── index.html # Main entry point
+```bash
+├── assets/              # Profile image, resume, and other static assets
+│   ├── profile.jpg
+│   └── resume.pdf
+├── css/                 # Stylesheets
+│   └── styles.css
+├── js/                  # JavaScript functionality
+│   └── main.js
+├── index.html           # Main entry point
 └── .gitignore
+```
 
 - Hosted on **Vercel**.  
 - Automatic deployments are triggered on each push to the `main` branch.
