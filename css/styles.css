@@ -275,3 +275,165 @@ main {
 .header-info a:hover {
   color: #ffccff; /* soft hover effect */
 }
+
+
+
+/* responsive */
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .header-info {
+    align-items: center;
+  }
+
+  .name-gradient {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .header-sub {
+    font-size: 1.05rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 30px 28px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .resume-btn {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    padding: 50px 20px 30px 20px;
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .name-gradient {
+    font-size: 1.9rem;
+  }
+
+  .header-sub {
+    font-size: 1rem;
+  }
+
+  main {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+
+  .card {
+    padding: 20px 18px;
+  }
+
+  .card h2 {
+    font-size: 1.6rem;
+  }
+
+  .skills-container div {
+    font-size: 1rem;
+  }
+
+  .project-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project {
+    flex: 1 1 100%;
+    padding: 18px 20px;
+  }
+
+  .project h3 {
+    font-size: 1.1rem;
+  }
+
+  .project p {
+    font-size: 0.95rem;
+  }
+
+  .education-timeline .timeline-content {
+    padding: 15px 18px;
+  }
+
+  .education-timeline .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .education-timeline .degree,
+  .education-timeline .year,
+  .education-timeline .gpa {
+    font-size: 0.9rem;
+  }
+
+  .contact-me-section {
+    font-size: 0.95rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .name-gradient {
+    font-size: 1.6rem;
+  }
+
+  .header-sub {
+    font-size: 0.9rem;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+  }
+
+  .skills-container div {
+    font-size: 0.9rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+}
